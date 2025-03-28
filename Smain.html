@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./main.css"/>
+
+
+<style>
+  body {margin:0;}
+          .hidden-xs {display:none;
+        }
+        .visible-xs {
+            display:block;}
+
+        @media only screen and (max-width: 767px) {
+            .hidden-xs {
+                display: block;
+            }
+            .visible-xs {
+                display: none;
+            }
+        }
+
+  .classes {background-color: white;                     
+            margin:0;
+}
+.tname2 {text-align:center;
+         color:#BE00FF;} 
+
+.division-5 {margin-top:-120px;}
+
+.slides {
+     margin-top:-22%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  
+  }
+  </style>
+    
+    
+</head>
+ 
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-primary-subtle visible-xs">
+    <div class="container-fluid">
+        <img src="./images/main-logo.png" alt="" width="100px" height="100px"/>
+      <a class="navbar-brand " style="color: rgb(160, 0, 0)" href="#"><b>CHILD LIFE AND EDUCATIONAL <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IMPROVEMENT TRUST</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">           
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">                
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PROGRAMS</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              HOW CAN I HELP
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Child Sponsership</a></li>
+              <li><a class="dropdown-item" href="#">Sponser a Meal</a></li>                  
+              <li><a class="dropdown-item" href="#">Child Volunteering</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">OUR PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+        </ul>
+        <a href="Lform.php"><button type="button" class="btn btn-primary me-4">Login</button></a>
+        <a href="Rform.php"><button type="button" class="btn btn-danger me-2">Register</button></a>
+      </div>
+    </div>
+  </nav>
+<!---Mobile view-->
+<nav class="navbar navbar-tertiary bg-primary-subtle text-dark fixed-top hidden-xs">
+    <div class="container-fluid">
+      <a class="navbar-brand" style="color: rgb(160, 0, 0)" href="#"><b>CHILD LIFE AND EDUCATIONAL <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IMPROVEMENT TRUST</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-start bg-primary-subtle" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"> <img src="./images/main-logo.png" alt="" width="100px" height="100px"/></h5>
+          <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PROGRAMS</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                HOW CAN I HELP
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Child Sponsership</a></li>
+                <li><a class="dropdown-item" href="#">Sponser a Meal</a></li>
+                <li><a class="dropdown-item" href="#">Child Volunteering</a></li>          
+              </ul>
+            </li>              
+          <li class="nav-item">
+            <a class="nav-link" href="#">OUR PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+        </ul>
+        <a href="Lform.php"><button type="button" class="btn btn-primary me-4">Login</button></a>
+        <a href="Rform.php"><button type="button" class="btn btn-danger me-2">Register</button></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+  <div class="carousel-item active">
+  <img src="./images/banner-1.jpg" class="d-block w-100" alt="banner-1" height="500px">
+  </div>
+  <div class="carousel-item ">
+  <img src="./images/banner-2.jpg" class="d-block w-100" alt="banner-2" height="500px">
+  </div>
+  <div class="carousel-item">
+  <img src="./images/banner-3.jpg" class="d-block w-100" alt="banner-3" height="500px">
+  </div>
+  <div class="carousel-item">
+  <img src="./images/banner-4.jpg" class="d-block w-100" alt="banner-4" height="500px">
+  </div>
+  <div class="carousel-item">
+  <img src="./images/banner-5.jpg" class="d-block w-100" alt="banner-5" height="500px">
+  </div>
+  <div class="carousel-item">
+  <img src="./images/banner-6.jpg" class="d-block w-100" alt="banner-6" height="500px">
+  </div>
+</div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+  </button>
+
+</div>
+
+
+  <!-- Page contents-->
+  <div id="progress">
+    <span id="progress-value" class="stt"></span>
+    <script src="return-top.js"></script>
+  </div>  
+    <div class="container-fluid profile m-0">       
+            <div class="row">
+              <div class="col-md-12">
+                <br/>
+                <h2 class="tname1">CHILD LIFE AND EDUCATIONAL IMPROVEMENT TRUST</h2><br/>
+                <p class="para1">Child Life and Educational Improvement Trust is a social, educational and community development organisation registered in New Delhi as a charitable trust under the Indian Trust Act. It is also registered with the Darpan Portal of the Government of India. It is also registered with the Home Ministry of the Government of India to receive foreign funds under the appropriate Foreign Contribution (Regulation) Act.</p>
+                <p class="para1">The Income Tax department of the Government of India and is allotted a Permanent Account Number (PAN) and is exempted from paying tax on the funds received by them. We are committed to the Millennium development goals. Our priorities and objectives are to carry out charitable, holistic and sustainable development work among the poor, marginalized, downtrodden, illiterate, vulnerable and exploited ones, irrespective of their caste, creed, colour, sex or religion. Our main focus is on Child Welfare development projects in various states of India.</p>
+              </div>
+            </div><br/>
+            <div class="row">
+              <div class="col-md-12">
+               <h2 class="tname1">OUR MISSION</h2><br/>
+               <p class="para1">The mission of Child Life and Educational Improvement Trust is “To ensure smile on every face``. This is best done by establishing a redeemed, regenerated and progressive society. Which will be free from exploitation, injustice and disparities. Where the overall development and dignity of every person will be secured where people can live in peace, solidarity, co-operation and brotherhood and where the rights of each one will be protected. All these would be brought about through transformation and sustained development of the Indian society in which they live.</p>
+              </div>
+            </div><br/>
+            <div class="row">        
+                <div class="col-md-4 card cards">                  
+                  <img src="./images/heart.png" alt="heart" class="img-fluid heart"/>                 
+                  <p class="img-mpara1"><b>Promoting the right and wellbeing of every Indian child, in everything we do.</b></p>              
+                </div>
+                <div class="col-md-4 card cards">               
+                  <img src="./images/earth.png" alt="earth" class="img-fluid earth"/>                 
+                  <p class="img-para2"><b>Supporting educational programs for children development in many states of India.</b></p>               
+                </div>
+                <div class="col-md-4 card cards">                 
+                  <img src="./images/hand.png" alt="hand" class="img-fluid hand"/>                 
+                  <p class="img-para3"><b>Focus on reaching the most vulnerable Indian children, to benefit all children, everywhere.</b></p>
+               
+                </div>
+              
+            </div>   
+          </div>
+       
+          <div class="container-fluid classes ">
+             <div class="row">
+                <div class="col-md-12">
+                    <br/><h1 class="tname2">OUR CAUSES</h1>
+                    <p class="para2">Your Can Help The Indian Child Through Welfare Trust.</p>
+                </div>
+              </div>        
+              <div class="row slides">    
+                <div class="col-md-12 slider">             
+                   <div class="wrapper ">
+                  <i id="left" class="fa-solid fa-angle-left"></i>
+                  <ul class="carouse">
+                    <li id="card" class="card">
+                      <div class="img"><img src="images/education.jpg" alt="img" class="img1 img-fluid" draggable="false"></div>
+                      <h2><b>Education</b></h2>
+                      <span>&nbsp;Education is a gift for life. We help children reach &nbsp;school and stay there.</span>
+                    </li>
+                    <li id="card" class="card">
+                      <div class="img"><img src="images/sports.jpg" alt="img" class="img2 img-fluid" draggable="false"></div>
+                      <h2><b>Sports</b></h2>
+                      <span>In Gurukulam, sports is a way of life...</span>
+                    </li>
+                    <li id="card" class="card">
+                      <div class="img"><img src="images/swimming.jpg" alt="img" class="img3 img-fluid" draggable="false"></div>
+                      <h2><b>Swimming</b></h2>
+                      <span>Online Teacher</span>
+                    </li>
+                    <li id="card" class="card">
+                      <div class="img"><img src="images/karathe.jpg" alt="img" class="img4 img-fluid" draggable="false"></div>
+                      <h2><b>Karathe</b></h2>
+                      <span>&nbsp;All our children practise Karate to foster discipline and &nbsp;strength.</span>
+                    </li>
+                    <li id="card" class="card">
+                      <div class="img"><img src="images/yoga.jpg" alt="img" class="img5 img-fluid" draggable="false"></div>
+                      <h2><b>Yoga</b></h2>
+                      <span>&nbsp;Under the guidance of Shri Vajavelu all our students &nbsp;practise Yoga.</span>
+                    </li>
+                    <li id="card" class="card">
+                      <div class="img"><img src="images/visualart.jpg" alt="img" class="img6 img-fluid" draggable="false"></div>
+                      <h2><b>Visual Arts</b></h2>
+                      <span>Visual arts may be categorized as decorative such as &nbsp; painting, photography, or sculpture. </span>
+                    </li>
+                  </ul>
+                  <i id="right" class="fa-solid fa-angle-right"></i>
+                   </div>
+                    <script src="./script.js"></script>
+                </div>
+              </div>
+              
+          </div> 
+         
+
+          <div class="container-fluid bg-secondary-subtle division-5">
+
+            <div class="row">
+               <div class="col-md-12 text-center">
+                   <br/><h1 style="color:#BE00FF;">How You Can Help</h1>
+                  
+               </div>
+            </div>
+            <div class="row">
+              <script
+                src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+                integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+                crossorigin="anonymous">
+              </script>
+              <script src="./count.js"></script>
+              <div class="col-md-4 text-center">
+                <h1 style="color:brown;">+<span class="count">890</span></h1>
+                <h2>Numbers of Volunteers</h2>
+                <p style="text-align: justify;">We have more than a thousand volunteers in different states. The heart of any community lies in the dedication and commitment of its volunteers. Whether it’s lending a helping hand in times of need, supporting local initiatives, or enriching the lives of others through acts of kindness, volunteers play a vital role in shaping the world around us. Their numbers may vary, but their impact is immeasurable, fostering a sense of unity, compassion, and hope for a brighter tomorrow.</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <h1 style="color:brown;">+<span class="count">13</span></h1>
+                <h2>Number of Projects</h2>
+                <p style="text-align: justify;">Our primary objectives are philanthropy and social well-being. At the heart of our mission lies a commitment to making a positive impact in our community. Through our social projects, we strive to address pressing issues, foster inclusivity, and create lasting change. From supporting education initiatives to women empowerment efforts, each project embodies our dedication to serving those in need and building a brighter future for all. Join us in making a difference and shaping a more compassionate world together.</p>
+              </div>
+              <div class="col-md-4 text-center">
+                <h1 style="color:brown;">+<span class="count">1200</span></h1>
+                <h2>Volunteer Hours</h2>
+                <p style="text-align: justify;">Volunteers are a valuable resource to support the planet. Each hour they give is a gift, a testament to their commitment to making a difference. Whether it’s lending a hand at events, offering a listening ear, or sparking joy with their acts of kindness, our volunteers embody the spirit of service. Their collective efforts illuminate the path towards a brighter, more compassionate tomorrow. Join us in celebrating the invaluable contributions of our volunteers, for every hour they give is a beacon of hope and goodwill.</p>
+              </div>
+
+            </div><br/><br/>
+          </div>
+       
+ <!-- Footer -->
+<footer
+        class="text-center text-lg-start text-white"
+        style="background-color: #2c2c4d"
+        ><br/>
+
+    <div class="text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold">CHILD LIFE AND EDUCATIONAL IMPROVEMENT TRUST</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+          <p>
+           <i>"The best way to make children good is to make them happy."</i>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">How Can I Help</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Child Sponsership</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Sponser a Meal</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Child Volunteering</a>
+          </p>          
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Useful links</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Programs</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Our Projects</a>
+          </p>
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">Gallery</a>
+          </p>          
+          <p>
+            <a href="#!" class="text-white" style="text-decoration: none;">About us</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold">Contact</h6>
+          <hr
+              class="mb-4 mt-0 d-inline-block mx-auto"
+              style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+          <p><i class="fas fa-home mr-3"></i>&nbsp;Madurai, TamilNadu</p>
+          <p><i class="fas fa-envelope mr-3"></i>&nbsp;info@Childtrust.com</p>
+          <p><i class="fa fa-phone mr-3"></i>&nbsp;+91 87654 38271</p>
+          <p><i class="fas fa-print mr-3"></i>&nbsp;+91 76584 92734</p>        
+        <div class="icons">
+          <a href="" class="text-white btn btn-primary btn-floating me-2" style="text-decoration: none; background-color: #3b5998; border-radius: 50%;">
+            <i class="fa fa-facebook"></i>    
+          </a>
+          <a href="" class="text-white btn btn-primary btn-floating me-2" style="text-decoration: none; background-color: #55acee; border-radius: 50%;">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="" class="text-white btn btn-primary btn-floating me-2" style="text-decoration: none;background-color: #dd4b39; border-radius: 50%;">
+            <i class="fa fa-google"></i>
+          </a>
+          <a href="" class="text-white btn btn-primary btn-floating me-2" style="text-decoration: none; background-color: #ac2bac; border-radius: 50%;">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="" class="text-white btn btn-primary btn-floating me-2" style="text-decoration: none; background-color: #0082ca; border-radius: 50%;">
+            <i class="fa fa-linkedin"></i>
+          </a>        
+        </div>
+      </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div><br/>
+
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div
+       class="text-center p-3"
+       style="background-color: rgba(0, 0, 0, 0.2)"
+       >
+    © 2024 Copyright, 
+    Child Life and Educational Improvement Trust
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</div>
+<!-- End of .container -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.title {
+     background-image: url('./images/overview/Title-image.jpg');
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     height:340px;
+}
+
+.notice {background-color: #BE00FF;
+         color: white;
+         height: 50px;
+         text-align: center;
+         
+        
+}
+.ntext {margin-top:10px;}
+
+.arrow {
+     border-bottom: 33px solid #BE00FF;
+     border-right:26px solid transparent;
+     border-left: 25px solid transparent;
+     transform: rotate(90deg);
+     margin-left:-21px;
+     margin-top: 7.5px;
+position: absolute;
+ }

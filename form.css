@@ -1,0 +1,102 @@
+* {margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:Arial, Helvetica, sans-serif;}
+
+html, body {
+    display: grid;
+    height: 100vh;
+    place-items:center;
+    background-color: #CFE2FF;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    margin-left: 110px;
+
+  
+}
+.maindiv {width:365px;
+          background-color: #fff;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          }
+
+.maindiv .title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 600;
+}
+
+
+
+
+
+
+
+form {
+      margin-top: 25px;
+}
+
+form .inputbox {
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.inputbox input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 17px;
+    padding-left: 45px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    transition: all 0.3s ease;
+    
+}
+
+.inputbox input:focus {
+    border-color:#CFE2FF ;
+}
+
+.inputbox .icon {
+    position: absolute;
+    color: grey;
+    top:50%;
+    left:20px;
+    transform: translateY(-50%);
+}
+
+form .option {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    
+}
+
+.option span {
+    margin-left: 5px;
+    font-size: 16px;
+    color:#333;
+}
+
+.forget {margin-left: 50px;}
+
+.option .forget a{
+    font-size: 16px;
+    color:#0066ff;
+
+}
+
+
+
+
+
